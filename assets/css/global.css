@@ -1,0 +1,41 @@
+.panel-heading {
+  background-color: #005EB8 !important;
+}
+
+.btn-sebrae {
+  background-color: #005EB8 !important;
+}
+
+.sub-panel .panel-heading {
+  padding: 8px 23px !important;
+}
+
+li.step.done::before {
+  background-color: #1ab83f !important;
+}
+
+ul.stepper .step:not(:last-of-type).active {
+  padding-bottom: 0.1ch !important;
+}
+
+.bs-stepper-label {
+  word-break: break-all;
+}
+
+/* .step {
+  min-width: 15% !important;
+  max-width: 25%;
+  word-break: break-all;
+} */
+
+.step-trigger {
+  width: 100%;    
+
+}
+
+.bs-stepper-label {
+  min-width: 100%; 
+  font-size: 12px;
+  white-space: normal;
+  word-break: break-word;
+}
