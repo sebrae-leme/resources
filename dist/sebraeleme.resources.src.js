@@ -1,4 +1,4 @@
-tinybind.binders.autocomplete = {
+;tinybind.binders.autocomplete = {
   bind: function (el, values) {
 
   },

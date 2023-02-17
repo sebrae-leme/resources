@@ -1,6 +1,6 @@
 'use strict';
 
-tinybind.binders.autocomplete = {
+;tinybind.binders.autocomplete = {
   bind: function bind(el, values) {},
 
   unbind: function unbind(el) {
