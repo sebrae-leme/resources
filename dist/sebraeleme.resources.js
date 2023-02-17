@@ -1576,13 +1576,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
 };
 
-itemAdded = function itemAdded(ev, el) {
+function itemAdded(ev, el) {
   console.log(ev, el);
-  undefined.dispatchEvent(new CustomEvent('itemchanged', { 'item': ev.item }));
+  this.dispatchEvent(new CustomEvent('itemchanged', { 'item': ev.item }));
 
   // new CustomEvent('itemchanged', { 'item': el.item })
-};
-substringMatcher = function substringMatcher(strs, name) {
+}
+
+function substringMatcher(strs, name) {
 
   return function findMatches(q, cb) {
     var matches, substrRegex;
@@ -1598,7 +1599,7 @@ substringMatcher = function substringMatcher(strs, name) {
     });
     cb(matches);
   };
-};
+}
 ;tinybind.formatters.and = function (comparee, comparator) {
   return comparee && comparator;
 };;tinybind.configure({

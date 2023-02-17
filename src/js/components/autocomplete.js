@@ -44,13 +44,14 @@ tinybind.binders.autocomplete = {
   },
 };
 
-itemAdded = (ev, el) => {
+function itemAdded(ev, el) {
   console.log(ev, el);
   this.dispatchEvent(new CustomEvent('itemchanged', { 'item': ev.item }));
 
   // new CustomEvent('itemchanged', { 'item': el.item })
-};
-substringMatcher = (strs, name) => {
+}
+
+function substringMatcher(strs, name) {
 
   return function findMatches(q, cb) {
     var matches, substrRegex;
@@ -66,4 +67,4 @@ substringMatcher = (strs, name) => {
     });
     cb(matches);
   };
-};
+}
