@@ -1,7 +1,7 @@
 tinybind.configure({
 
   // Attribute prefix in templates
-  prefix: 'rv',
+  prefix: 'leme',
 
   // Preload templates with initial data on bind
   preloadData: true,
