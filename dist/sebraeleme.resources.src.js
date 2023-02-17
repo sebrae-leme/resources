@@ -1,4 +1,4 @@
-tinybind.binders.autocomplete = {
+;tinybind.binders.autocomplete = {
   bind: function (el, values) {
 
   },
@@ -72,7 +72,7 @@ substringMatcher = (strs, name) => {
 };;tinybind.configure({
 
   // Attribute prefix in templates
-  prefix: 'leme',
+  prefix: 'lm',
 
   // Preload templates with initial data on bind
   preloadData: true,
