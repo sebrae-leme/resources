@@ -1,15 +1,17 @@
+'use strict';
+
 tinybind.binders.autocomplete = {
-  bind: function (el, values) {
+  bind: function bind(el, values) {},
 
-  },
-
-  unbind: function (el) {
+  unbind: function unbind(el) {
     this.autocompleteInstance.destroy();
   },
 
-  routine: function (el, values) {
+  routine: function routine(el, values) {
 
-    if (this.autocompleteInstance) { this.autocompleteInstance.destroy(); }
+    if (this.autocompleteInstance) {
+      this.autocompleteInstance.destroy();
+    }
 
     this.autocompleteInstance = FLUIGC.autocomplete(el, {
       highlight: true,
@@ -24,7 +26,7 @@ tinybind.binders.autocomplete = {
         tag: $(el).attr('ac-tag-template'),
         suggestion: $(el).attr('ac-tag-template')
       },
-      source: substringMatcher(values, $(el).attr('ac-display-key')),
+      source: substringMatcher(values, $(el).attr('ac-display-key'))
     }, function (err, data) {
       if (err) {
         try {
@@ -41,16 +43,16 @@ tinybind.binders.autocomplete = {
     });
 
     this.autocompleteInstance.on('fluig.autocomplete.itemAdded', this.publish);
-  },
+  }
 };
 
-itemAdded = (ev, el) => {
+itemAdded = function itemAdded(ev, el) {
   console.log(ev, el);
-  this.dispatchEvent(new CustomEvent('itemchanged', { 'item': ev.item }));
+  undefined.dispatchEvent(new CustomEvent('itemchanged', { 'item': ev.item }));
 
   // new CustomEvent('itemchanged', { 'item': el.item })
 };
-substringMatcher = (strs, name) => {
+substringMatcher = function substringMatcher(strs, name) {
 
   return function findMatches(q, cb) {
     var matches, substrRegex;
@@ -67,3 +69,26 @@ substringMatcher = (strs, name) => {
     cb(matches);
   };
 };
+;tinybind.formatters.and = function (comparee, comparator) {
+  return comparee && comparator;
+};;tinybind.configure({
+
+  // Attribute prefix in templates
+  prefix: 'leme',
+
+  // Preload templates with initial data on bind
+  preloadData: true,
+
+  // Root sightglass interface for keypaths
+  rootInterface: '.',
+
+  // Template delimiters for text bindings
+  templateDelimiters: ['{', '}'],
+
+  // Augment the event handler of the on-* binder
+  handler: function handler(target, event, binding) {
+    this.call(target, event, binding.view.models);
+  }
+
+});
+//# sourceMappingURL=sebraeleme.resources.js.map

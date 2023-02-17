@@ -14,7 +14,7 @@ tinybind.configure({
 
   // Augment the event handler of the on-* binder
   handler: function(target, event, binding) {
-    this.call(target, event, binding.view.models)
+    this.call(target, event, binding.view.models);
   }
 
-})
+});
