@@ -26,7 +26,7 @@ eval("(function (global, factory) {\n   true ? module.exports = factory() :\n  0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_tinybind_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/tinybind.components */ \"./src/js/tinybind.components.js\");\n/* harmony import */ var _js_tinybind_formatters__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/tinybind.formatters */ \"./src/js/tinybind.formatters.js\");\n__webpack_require__( /*! ../node_modules/tinybind/dist/tinybind */ \"./node_modules/tinybind/dist/tinybind.js\");\n\n// import './js/tinybind.config';\n\n\n\n\n//# sourceURL=webpack://resources/./src/entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_tinybind_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/tinybind.components */ \"./src/js/tinybind.components.js\");\n/* harmony import */ var _js_tinybind_formatters__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/tinybind.formatters */ \"./src/js/tinybind.formatters.js\");\n__webpack_require__( /*! ../node_modules/tinybind/dist/tinybind */ \"./node_modules/tinybind/dist/tinybind.js\");\n\n\n\n\n\n//# sourceURL=webpack://resources/./src/entry.js?");
 
 /***/ }),
 
