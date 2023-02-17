@@ -31,7 +31,7 @@ tinybind.binders.autocomplete = {
           errMessage = JSON.parse(err.responseText.message);
           errMessage = errMessage.message ? err.responseText.message : err.responseText;
         } catch (e) {
-          errMessage = 'Não foi possível listar os dados.';
+          errMessage = 'Não foi possível listar os dados';
         }
         FLUIGC.toast({
           message: errMessage,
