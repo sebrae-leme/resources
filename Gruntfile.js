@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['node_modules/tinybind/tinybind.js', 'src/**/*.js'],
+        src: ['node_modules/tinybind/dist/tinybind.js', 'src/**/*.js'],
         dest: 'dist/<%= pkg.name %>.src.js'
       }
     },
